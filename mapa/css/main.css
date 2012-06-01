@@ -1,0 +1,82 @@
+/* 
+    Document   : main
+    Created on : 24/05/2012, 12:43:14
+    Author     : rodrigo.taira
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#pano {
+    float: left;
+    top: 8px; 
+    width: 800px; 
+    height: 600px;
+}
+
+#controles {
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 400px; 
+    height: 400px;
+    background-color: buttonface;
+}
+
+#busca {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+#endereco {
+    width: 290px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+#look-left {
+    float: left;
+    margin-left: 120px;
+}
+
+#look-right {
+    float: left;
+    margin-left: 10px;
+}
+
+#look-back {
+    clear: both;
+    margin-left: -125px;
+    margin-top: 30px;
+}
+
+#header-value {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+#zoom-value {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+#pitch-value {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+.angulo{
+    margin-left: 10px;
+}
+
+p {
+   text-align: center; 
+   margin-top: 5px;
+   margin-bottom: 5px;
+}

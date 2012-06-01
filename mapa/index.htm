@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Cappuccino Street View</title>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <script type="text/javascript" src="js/tools.js" ></script>
+        <script type="text/javascript" src="js/main.js" ></script>
+    </head>
+    <body>
+        <div id="pano"></div>
+        <div id="controles">
+            <div class="busca">
+                <p>Busque um endereço:</p>
+                <form id="busca" method="POST">
+                    <input type="text" name="endereco" id="endereco"/>
+                    <input type="submit" value="Search"/>
+                </form>
+            </div>
+            <div class="girar">
+                <p>Navegue:</p>
+                <input type="button" value="Look Left" id="look-left" />
+                <input type="button" value="Look Back" id="look-back" />
+                <input type="button" value="Look Right" id="look-right" />
+            </div>
+            <div class="angulo">
+                <p>Mude o angulo de visão:</p>
+                <select name="header-value" id="header-value"> 
+                    <option value="">Ângulo</option>
+                    <option value="00">0</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                    <option value="110">110</option>
+                    <option value="120">120</option>
+                    <option value="130">130</option>
+                    <option value="140">140</option>
+                    <option value="150">150</option>
+                    <option value="160">160</option>
+                    <option value="170">170</option>
+                    <option value="180">180</option>
+                    <option value="190">190</option>
+                    <option value="200">200</option>
+                    <option value="210">210</option>
+                    <option value="220">220</option>
+                    <option value="230">230</option>
+                    <option value="240">240</option>
+                    <option value="250">250</option>
+                    <option value="260">260</option>
+                    <option value="270">270</option>
+                    <option value="280">280</option>
+                    <option value="290">290</option>
+                    <option value="300">300</option>
+                    <option value="310">310</option>
+                    <option value="320">320</option>
+                    <option value="330">330</option>
+                    <option value="340">340</option>
+                    <option value="350">350</option>
+                </select>
+                <input type="text" name="atual-header" id="atual-header" disabled />
+                <br/>
+                <select name="zoom-value" id="zoom-value"> 
+                    <option value="">Zoom</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <input type="text" name="atual-zoom" id="atual-zoom" disabled />
+                <br/>
+                <select name="pitch-value" id="pitch-value"> 
+                    <option value="">Inclinação</option>
+                    <option value="-15">-15</option>
+                    <option value="-10">-10</option>
+                    <option value="-5">-5</option>
+                    <option value="0" selected>0</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+                <input type="text" name="atual-pitch" id="atual-pitch" disabled />
+            </div>
+        </div>
+    </body>
+</html>
